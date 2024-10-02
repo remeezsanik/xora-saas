@@ -1,9 +1,9 @@
 import clsx from "clsx";
 import { useState } from "react";
 import { Element } from "react-scroll";
-import { plans } from "../constants";
 import CountUp from "react-countup";
 import Button from "../components/Button";
+import { plans } from "../constants";
 
 type PLANS = {
   id: string;

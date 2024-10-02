@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
-import { faq } from "../constants";
 import FaqItem from "../components/FaqItem";
+import { faq } from "../constants";
 
 const Faq = () => {
   const halfLength = Math.floor(faq.length / 2);

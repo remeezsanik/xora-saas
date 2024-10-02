@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
-import { links, logos } from "../constants";
 import Marker from "../components/Marker";
+import { links, logos } from "../constants";
 
 type LOGOS = {
   id: string;
@@ -39,7 +39,7 @@ const Download = () => {
                 flavor, we've got you covered.{" "}
               </p>
               <ul className="flex flex-wrap items-center gap-6">
-                {links.map(({ id, url, icon }: LINKS) => (
+                {links.map(({ id, icon }: any) => (
                   <li
                     key={id}
                     className="download_tech-link download_tech-link_last-before"
