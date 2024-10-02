@@ -9,11 +9,11 @@ type LOGOS = {
   height: number;
   title: string;
 };
-type LINKS = {
-  id: string;
-  url: string;
-  icon: string;
-};
+// type LINKS = {
+//   id: string;
+//   url: string;
+//   icon: string;
+// };
 
 const Download = () => {
   return (
