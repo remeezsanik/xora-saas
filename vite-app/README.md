@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# React | TypeScript | Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Xora SaaS Landing Page
 
-Currently, two official plugins are available:
+A modern, responsive SaaS landing page built with **React**, **Typescript**, and **TailwindCSS**. This project focuses on delivering a sleek UI and follows **mobile-first design principles** to ensure optimal user experience on all devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Modern UI:** Clean, professional, and visually appealing design to capture users' attention.
+- **Responsive Design:** Built with mobile-first principles, ensuring a seamless experience across all device sizes.
+- **Fast Development:** Powered by **Vite**, providing a fast development and build experience.
+- **Interactive Animations:** Includes dynamic elements like animated counters, collapsible sections, and smooth scrolling.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Built With
 
-- Configure the top-level `parserOptions` property like this:
+- **ReactJS** - A JavaScript library for building user interfaces.
+- **TypeScript** - TypeScript adds static typing to JavaScript, improving code quality and development speed.
+- **TailwindCSS** - A utility-first CSS framework for rapid UI development.
+- **Vite** - A next-generation, fast build tool for modern web development.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Additional Packages
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **react-countup** - Adds number count-up animations for statistical sections.
+- **react-slidedown** - Implements smooth collapse/expand animations for content sections.
+- **react-scroll** - Provides smooth scrolling behavior for in-page navigation.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Installation
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+To get started with the project, clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/remeezsanik/xora-saas.git
+cd xora-saas
+npm install
+npm run dev
